@@ -1,38 +1,25 @@
 package com.example.employeeService.model;
 
+import lombok.Getter;
+
 public class Employee {
-    private String employeeId;
-    private String firstName;
-    private String lastName;
+    @Getter
+    private String employee_id;
+    @Getter
+    private String first_name;
+    @Getter
+    private String last_name;
+    @Getter
     private String email;
+    @Getter
     private String title;
 
-    public Employee(String employeeId, String firstName, String lastName,String email, String title) {
-        this.employeeId = employeeId;
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Employee(String employee_id, String first_name, String last_name,String email, String title) {
+        this.employee_id = employee_id;
+        this.first_name = first_name;
+        this.last_name = last_name;
         this.email = email;
         this.title = title;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getEmployeeId() {
-        return employeeId;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getTitle() {
-        return title;
     }
 
 

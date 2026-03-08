@@ -1,5 +1,7 @@
 package com.example.employeeService.model;
 
+import org.springframework.web.bind.annotation.RequestBody;
+
 import java.util.List;
 
 public class Employees {
@@ -22,4 +24,9 @@ public class Employees {
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
+
+//    //ADD EMPLOYEE
+//    public void addEmployee(@RequestBody Employee employee){
+//        employees.add(employee);
+//    }
 }
